@@ -12,7 +12,7 @@ with Hub IP 192.168.0.50:
 ```Javascript
 const util = require('util');
 const HarmonyHubWS = require('harmonyhubws');
-const IP = '192.168.0.54';
+const IP = '192.168.0.50';
 
 let harmonyHubWS = new HarmonyHubWS(IP);
 harmonyHubWS.on('online', () => {

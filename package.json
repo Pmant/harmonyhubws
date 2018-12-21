@@ -1,0 +1,46 @@
+{
+  "name": "harmonyhubws",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "description": "Simple API for Logitech Harmony Hub using local Websocket Connection",
+  "author": "Pmant <patrickmo@gmx.de>",
+  "homepage": "https://github.com/pmant/harmonyhubws",
+  "license": "MIT",
+  "keywords": [
+    "logitech",
+    "harmony",
+    "hub",
+    "home automation",
+    "API",
+    "websocket"
+  ],
+  "bugs": {
+    "url": "https://github.com/pmant/harmonyhubws/issues"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmant/harmonyhubws"
+  },
+  "scripts": {
+    "prepublishOnly": "babel --presets es2016 lib/HarmonyHubWS.js -o lib/HarmonyHubWS_ES2016.js",
+    "babel": "babel --presets es2016 lib/HarmonyHubWS.js -o lib/HarmonyHubWS_ES2016.js",
+    "eslint": "eslint lib/HarmonyHubWS.js",
+    "test": "mocha --exit"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "semver": "^5.6.0",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2016": "^6.24.1",
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0"
+  }
+}

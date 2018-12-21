@@ -1,4 +1,10 @@
 # HarmonyHubWS
+[![NPM version](http://img.shields.io/npm/v/harmonyhubws.svg)](https://www.npmjs.com/package/harmonyhubws)
+[![Downloads](https://img.shields.io/npm/dm/harmonyhubws.svg)](https://www.npmjs.com/package/harmonyhubws)
+[![Build Status](https://travis-ci.org/Pmant/harmonyhubws.svg?branch=master)](https://travis-ci.org/Pmant/harmonyhubws)
+[![Build status](https://ci.appveyor.com/api/projects/status/nojapw16sp1nd1g4?svg=true)](https://ci.appveyor.com/project/Pmant/harmonyhubws)
+
+
 A node module for Logitech Harmony Hub.
 
 Uses a simple watchdog to reconnect on connection losses.

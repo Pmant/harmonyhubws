@@ -98,7 +98,7 @@ Asks Hub to start activity with ID `activityId`. Results in multiple state event
 Asks Hub to press a device key. 
 * `action`: `string` - whole action string (deviceId, keyId, type) as retrieved from [config](#requestConfig).
 * [`hold`]: `string` 'press' or 'hold' - defaults to `press`, `hold` is a long press for ~250ms, if you want to hold longer you need to request hold repeatedly.
-* [`delay`]: `number` defaults to `100`, how long the key is pressed,default value should work in most situations
+* [`delay`]: `number` defaults to `100`, how long the key is held
 
 
 or 
@@ -108,7 +108,7 @@ or
 * `keyId`: `number` - ID of the key you want to press. To retrieve key Ids see [requestConfig](#requestConfig).
 * [`type`]: `number` - defaults to `IRCommand`. To retrieve key types see [requestConfig](#requestConfig).
 * [`hold`]: `string` 'press' or 'hold' - defaults to `press`, `hold` is a long press for ~250ms, if you want to hold longer you need to request hold repeatedly.
-* [`delay`]: `number` defaults to `100`, how long the key is pressed,default value should work in most situations
+* [`delay`]: `number` defaults to `100`, how long the key is held
 
 ## Events
 <a name="online"></a>

@@ -135,6 +135,10 @@ Fired when hub sends its configuration (devices, activities).
 * `config`: `object` - Hubs configuration. For details see [example](#harmonyHubWS).
 
 ## Changelog
+
+### 1.0.5
+* (foxriver76) make code working for Harmony Hub v4.15.250
+
 ### 1.0.0
 * (Pmant) initial commit
 

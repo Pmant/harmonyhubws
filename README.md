@@ -104,8 +104,8 @@ Asks Hub to press a device key.
 or 
 
 ### requestKeyPress(deviceId, keyId, type = 'IRCommand', hold = 'press', delay = 100)
-* `deviceId`: `number` - ID of the device you want to control. To retrieve device IDs see [requestConfig](#requestConfig).
-* `keyId`: `number` - ID of the key you want to press. To retrieve key Ids see [requestConfig](#requestConfig).
+* `deviceId`: `string` - ID of the device you want to control. To retrieve device IDs see [requestConfig](#requestConfig).
+* `keyId`: `string` - ID (name) of the key you want to press. To retrieve key Ids see [requestConfig](#requestConfig).
 * [`type`]: `number` - defaults to `IRCommand`. To retrieve key types see [requestConfig](#requestConfig).
 * [`hold`]: `string` 'press' or 'hold' - defaults to `press`, `hold` is a long press for ~250ms, if you want to hold longer you need to request hold repeatedly.
 * [`delay`]: `number` defaults to `100`, how long the key is held
@@ -135,6 +135,9 @@ Fired when hub sends its configuration (devices, activities).
 * `config`: `object` - Hubs configuration. For details see [example](#harmonyHubWS).
 
 ## Changelog
+
+### 1.0.6
+* (hufftheweevil) fix requestKeyPress improper handling when alternate format used
 
 ### 1.0.5
 * (foxriver76) make code working for Harmony Hub v4.15.250
